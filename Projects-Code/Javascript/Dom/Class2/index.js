@@ -8,7 +8,7 @@
 
 let parentElement=document.querySelector(".parent")
 
-// creating button element
+
 let mybutton=document.createElement("button");
 mybutton.innerText="click me";
 
