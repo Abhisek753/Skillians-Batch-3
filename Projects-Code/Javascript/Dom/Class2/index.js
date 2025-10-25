@@ -25,3 +25,11 @@ mybutton.addEventListener("click",function(){
 });
 
 
+
+
+let secondbtn=document.querySelector(".secondbtn");
+secondbtn.addEventListener("click",()=>{
+  let inputElement=document.querySelector("input").value;
+  console.log("input event fired");
+  console.log(inputElement);
+});
