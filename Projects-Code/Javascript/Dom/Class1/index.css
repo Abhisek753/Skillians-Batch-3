@@ -1,0 +1,22 @@
+.heading{
+    color: brown;
+}
+.btn{
+    background-color: black;
+    color: white;
+}
+
+
+#para{
+    color: aqua;
+}
+.hello{
+ height: 200px;
+ width: 200px;
+ background-color: blue;
+}
+.hello2{
+ height: 400px;
+ width: 400px;
+ background-color: rgb(0, 255, 94);
+}
