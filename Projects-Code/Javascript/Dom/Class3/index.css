@@ -1,0 +1,33 @@
+button{
+    color: white;
+    background-color: tomato;
+    padding: 8px 10px;
+}
+
+#todo-container{
+    background-color: white;
+    width: 360px;
+    margin: auto;
+    padding: 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+}
+input{
+    padding: 8px;
+    width: 70%;
+}
+ul{
+    list-style: none;
+    padding: 0px;
+
+}
+li{
+    background-color: rgb(230, 243, 243);
+    margin: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px;
+
+}
+
