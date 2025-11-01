@@ -1,0 +1,9 @@
+{
+  "movies": [
+    { "id": "1", "title": "Spider Man","Category":"Hollywood", "views": 100 },
+    { "id": "2", "title": "Conjuring","Category":"Hollywood", "views": 200 },
+      { "id": "3", "title": "Naruto","Category":"Annime", "views": 300 },
+        { "id": "4", "title": "Demon Slayer","Category":"Action Annime", "views": 400 }
+  ]
+
+}
