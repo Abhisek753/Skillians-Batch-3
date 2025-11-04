@@ -36,7 +36,10 @@ function updateCarousel(){
         }
     })
 }
-
+function autoNext(){
+    currentSlide=(currentSlide+1)%carousalImages.length;
+    updateCarousel()
+}
 function changeSlide(direction){
   currentSlide=(currentSlide+direction+carousalImages.length)%carousalImages.length;
   updateCarousel()
@@ -92,6 +95,6 @@ function displayMovies(){
 
 }
 
-
+setInterval(autoNext,2000);
 loadMovies()
 initCarousal()

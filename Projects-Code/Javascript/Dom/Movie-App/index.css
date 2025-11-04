@@ -159,6 +159,7 @@ body{
 }
 .movie-rating{
     color: goldenrod;
+    margin-bottom: 4px;
 }
 
 .movie-buttons{
