@@ -89,10 +89,37 @@ function displayMovies(){
            </div>
      </div>
     `
+    card.addEventListener("click",()=>{
+      window.location.href="single.html"
+    })
+    const cartBtn=card.querySelector(".btn-cart");
+    cartBtn.addEventListener("click",()=>handleCart(movie))
     moviesContainer.appendChild(card)
    })
 
 
+}
+
+async function handleCart(movie) {
+ try{
+  console.log(movie)
+  const res=await fetch(`http://localhost:3000/cart?id=${movie.id}`);
+  const existing=await res.json();
+  if(existing.length>0){
+   alert(`${movie.title} is already in your cart`);
+  }
+  await fetch("http://localhost:3000/cart",{
+    method: 'POST',
+    headers: {
+        'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(movie)
+  });
+  alert(`${movie.title} added to cart`)
+
+ }catch(err){
+  console.log(err)
+ }
 }
 
 setInterval(autoNext,2000);
