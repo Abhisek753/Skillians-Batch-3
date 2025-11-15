@@ -1,0 +1,23 @@
+/* .App{
+  background-color: rgb(164, 56, 56);
+  padding: 10px;
+} */
+
+.card-container{
+  background-color: rgb(56, 164, 94);
+  padding: 10px;
+  margin: 10px;
+  border: 2px solid black;
+  height: auto;
+  width: 600px;
+}
+.top-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.details{
+  display: flex;
+  flex-direction: column;
+}
