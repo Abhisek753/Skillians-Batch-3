@@ -1,0 +1,49 @@
+.counter{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ flex-direction: column;
+}
+.parent{
+     text-align: center;
+
+}
+.btn-container{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.increment{
+    background-color: green;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+}
+.decrement{
+    background-color: red;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+}
+.reset{
+    background-color: blue;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+}
+.count{
+    font-size: 40px;
+    margin: 0;
+}
+.multipy{
+    background-color: orange;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+}

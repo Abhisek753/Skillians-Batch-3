@@ -1,0 +1,23 @@
+.parent{
+    background-color: #afacac;
+    margin-top: 100px;
+    padding: 10px;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 300px;
+    margin: auto;
+}
+.input-field{
+    padding: 5px;
+    font-size: 16px;
+}
+.submit-btn{
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
