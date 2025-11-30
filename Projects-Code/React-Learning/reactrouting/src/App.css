@@ -1,0 +1,33 @@
+*{
+  padding: 0px;
+  margin: 0px;
+
+}
+
+.nav-container{
+  display: flex;
+  border:1px solid black;
+  height: 5vh;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+.btn-container{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+
+}
+.btn-container button{
+  border: none;
+  padding: 4px 8px;
+  background-color: blue;
+  color: white;
+}
+
+.app button{
+  border: none;
+  padding: 4px 8px;
+  background-color: rgb(114, 181, 223);
+  color: white;
+}
