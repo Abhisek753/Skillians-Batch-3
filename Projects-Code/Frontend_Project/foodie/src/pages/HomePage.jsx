@@ -27,15 +27,17 @@ const [error,setError]=useState(null);
   }, [])
 
   return (
-    <div>
+    <div className='px-4'>
         <h1 className='text-2xl font-semibold mb-4' >Food Items</h1>
         <FilterBar/>
        {error && <div className='text-red-500'>Error loading products.</div>}
       {!loading && !error && products.length!==0 &&(
-        <div className=' mt-6 grid gap-4 grid-cols-1 sm:grid-cols-2 md:grid-col-3 lg:grid-cols-4'>
+        <div className=' mt-6 grid gap-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4'>
           {products.map((product)=>(
-           <ProductCard product={product}/>
-
+            <div key={product.id}>
+              <ProductCard product={product}/>
+            </div>
+         
           ))}
               
         </div>

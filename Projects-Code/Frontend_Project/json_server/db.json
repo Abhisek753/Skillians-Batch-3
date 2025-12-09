@@ -1,0 +1,240 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Margherita Pizza",
+      "category": "Pizza",
+      "price": 12.99,
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Pizza-3007395.jpg/1200px-Pizza-3007395.jpg",
+      "description": "Classic pizza with tomato sauce, mozzarella, and fresh basil",
+      "rating": 4.5,
+      "reviews": 120,
+      "inStock": true
+    },
+    {
+      "id": 2,
+      "name": "Pepperoni Pizza",
+      "category": "Pizza",
+      "price": 14.99,
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Pizza-3007395.jpg/1200px-Pizza-3007395.jpg",
+      "description": "Delicious pizza topped with pepperoni and mozzarella cheese",
+      "rating": 4.7,
+      "reviews": 95,
+      "inStock": true
+    },
+    {
+      "id": 3,
+      "name": "Veggie Burger",
+      "category": "Burgers",
+      "price": 10.99,
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Pizza-3007395.jpg/1200px-Pizza-3007395.jpg",
+      "description": "Fresh vegetables with whole wheat bun and special sauce",
+      "rating": 4.2,
+      "reviews": 78,
+      "inStock": true
+    },
+    {
+      "id": 4,
+      "name": "Classic Cheeseburger",
+      "category": "Burgers",
+      "price": 11.99,
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Pizza-3007395.jpg/1200px-Pizza-3007395.jpg",
+      "description": "Juicy beef patty with cheddar cheese, lettuce, and tomato",
+      "rating": 4.6,
+      "reviews": 150,
+      "inStock": true
+    },
+    {
+      "id": 5,
+      "name": "Chicken Caesar Salad",
+      "category": "Salads",
+      "price": 13.99,
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Pizza-3007395.jpg/1200px-Pizza-3007395.jpg",
+      "description": "Grilled chicken with romaine lettuce, parmesan, and caesar dressing",
+      "rating": 4.3,
+      "reviews": 65,
+      "inStock": true
+    },
+    {
+      "id": 6,
+      "name": "Greek Salad",
+      "category": "Salads",
+      "price": 9.99,
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Pizza-3007395.jpg/1200px-Pizza-3007395.jpg",
+      "description": "Fresh vegetables with feta cheese and olive oil vinaigrette",
+      "rating": 4.4,
+      "reviews": 88,
+      "inStock": true
+    },
+    {
+      "id": 7,
+      "name": "Spaghetti Carbonara",
+      "category": "Pasta",
+      "price": 13.99,
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Pizza-3007395.jpg/1200px-Pizza-3007395.jpg",
+      "description": "Creamy pasta with bacon, eggs, and parmesan cheese",
+      "rating": 4.8,
+      "reviews": 110,
+      "inStock": true
+    },
+    {
+      "id": 8,
+      "name": "Penne Arrabbiata",
+      "category": "Pasta",
+      "price": 12.99,
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Pizza-3007395.jpg/1200px-Pizza-3007395.jpg",
+      "description": "Spicy tomato sauce with garlic and red chili peppers",
+      "rating": 4.5,
+      "reviews": 92,
+      "inStock": true
+    },
+    {
+      "id": 9,
+      "name": "Iced Latte",
+      "category": "Beverages",
+      "price": 5.99,
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Pizza-3007395.jpg/1200px-Pizza-3007395.jpg",
+      "description": "Smooth espresso with cold milk and ice",
+      "rating": 4.6,
+      "reviews": 200,
+      "inStock": true
+    },
+    {
+      "id": 10,
+      "name": "Fresh Orange Juice",
+      "category": "Beverages",
+      "price": 4.99,
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Pizza-3007395.jpg/1200px-Pizza-3007395.jpg",
+      "description": "Freshly squeezed orange juice",
+      "rating": 4.4,
+      "reviews": 145,
+      "inStock": true
+    },
+    {
+      "id": 11,
+      "name": "Chocolate Cake",
+      "category": "Desserts",
+      "price": 8.99,
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Pizza-3007395.jpg/1200px-Pizza-3007395.jpg",
+      "description": "Rich chocolate cake with chocolate frosting",
+      "rating": 4.7,
+      "reviews": 130,
+      "inStock": true
+    },
+    {
+      "id": 12,
+      "name": "Strawberry Cheesecake",
+      "category": "Desserts",
+      "price": 7.99,
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Pizza-3007395.jpg/1200px-Pizza-3007395.jpg",
+      "description": "Creamy cheesecake with fresh strawberries",
+      "rating": 4.9,
+      "reviews": 175,
+      "inStock": true
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "Pizza",
+      "description": "Delicious Italian pizzas"
+    },
+    {
+      "id": 2,
+      "name": "Burgers",
+      "description": "Juicy and tasty burgers"
+    },
+    {
+      "id": 3,
+      "name": "Salads",
+      "description": "Fresh and healthy salads"
+    },
+    {
+      "id": 4,
+      "name": "Pasta",
+      "description": "Classic Italian pasta dishes"
+    },
+    {
+      "id": 5,
+      "name": "Beverages",
+      "description": "Refreshing drinks"
+    },
+    {
+      "id": 6,
+      "name": "Desserts",
+      "description": "Sweet treats and desserts"
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "name": "John Doe",
+      "email": "john@example.com",
+      "password": "hashed_password_123",
+      "createdAt": "2024-01-15T10:00:00Z"
+    },
+    {
+      "id": 2,
+      "name": "Jane Smith",
+      "email": "jane@example.com",
+      "password": "hashed_password_456",
+      "createdAt": "2024-02-20T14:30:00Z"
+    }
+  ],
+  "orders": [
+    {
+      "id": 1,
+      "userId": 1,
+      "items": [
+        {
+          "productId": 1,
+          "quantity": 2,
+          "price": 12.99
+        },
+        {
+          "productId": 5,
+          "quantity": 1,
+          "price": 13.99
+        }
+      ],
+      "totalAmount": 39.97,
+      "status": "completed",
+      "createdAt": "2024-03-10T12:00:00Z"
+    },
+    {
+      "id": 2,
+      "userId": 2,
+      "items": [
+        {
+          "productId": 7,
+          "quantity": 1,
+          "price": 13.99
+        },
+        {
+          "productId": 9,
+          "quantity": 2,
+          "price": 5.99
+        }
+      ],
+      "totalAmount": 25.97,
+      "status": "pending",
+      "createdAt": "2024-03-15T15:45:00Z"
+    }
+  ],
+  "cart": [
+    {
+      "id": 1,
+      "userId": 1,
+      "productId": 2,
+      "quantity": 1,
+      "addedAt": "2024-03-20T10:15:00Z"
+    },
+    {
+      "id": 2,
+      "userId": 1,
+      "productId": 6,
+      "quantity": 2,
+      "addedAt": "2024-03-20T11:20:00Z"
+    }
+  ]
+}
