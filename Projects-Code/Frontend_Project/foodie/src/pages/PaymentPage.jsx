@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import { useCart } from '../context/CartContext'
 
 const PaymentPage = () => {
-  const { totalQty } = useCart()
+  const { totalAmount } = useCart()
   const [cardName, setCardName] = useState('')
   const [cardNumber, setCardNumber] = useState('')
 
@@ -25,7 +25,7 @@ const PaymentPage = () => {
   return (
     <div className="max-w-md mx-auto mt-12 p-6 bg-white rounded shadow">
       <h2 className="text-2xl font-semibold mb-4">Payment</h2>
-      <p className="mb-4">Payable amount: ${totalQty}</p>
+      <p className="mb-4">Payable amount: ${totalAmount.toFixed(2)}</p>
 
       <form onSubmit={handlePay} className="space-y-4">
         <div>
