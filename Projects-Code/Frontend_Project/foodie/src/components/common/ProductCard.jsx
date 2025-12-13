@@ -1,15 +1,18 @@
 import React from 'react'
 import {useNavigate} from "react-router-dom"
+import { useCart } from '../../context/CartContext'
 const ProductCard = ({product}) => {
+  const {addToCart}=useCart()
   const navigate=useNavigate()
  
   const handleViewDetails=()=>{
     navigate(`/product/${product.id}`);
   }
 
-const handleAddToCart=()=>{
-  console.log(product)
-}
+  const handleAddToCart=()=>{
+     addToCart(product);
+  }
+
 
   return (
     <div  className='bg-white shadow rounded-lg overflow-hidden flex flex-col'>

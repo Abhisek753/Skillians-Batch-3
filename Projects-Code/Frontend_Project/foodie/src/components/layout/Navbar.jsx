@@ -1,18 +1,21 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { FaCartPlus } from "react-icons/fa";
+import { useCart } from '../../context/CartContext';
 const Navbar = () => {
+  const {totalQty}=useCart();
     let isLoggedIn =false;
   return (
     <header className='bg-white shadow-md sticky top-0 z-10'>
       <nav className='container mx-auto px-4 flex items-center justify-between'>
         <Link to='/' className='text-2xl font-bold text-orange-600 py-4'>Foodie</Link>
         <div className='flex items-center gap-4'>
-          <Link to='/cart' className='text-gray-700 hover:text-green-600'>
+          <Link to='/' className='text-gray-700 hover:text-green-600'>
             Home
           </Link>
             <Link to='/cart' className='text-gray-700 hover:text-green-600 flex items-center gap-1'>
               Cart  <FaCartPlus />
+              <span className='ml-1 items-center bg-orange-500 rounded-full px-2 py-0.5 text-white'>{totalQty}</span>
             </Link>
 
         </div>  
