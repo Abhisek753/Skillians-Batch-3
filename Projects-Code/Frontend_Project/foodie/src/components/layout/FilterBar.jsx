@@ -1,8 +1,52 @@
 import React from 'react'
+import Select from 'react-select'
+const FilterBar = ({ categories,selectedCategory, onCategoryChange, searchTerm, onSearchChange,sortOption, onSortChange }) => {
 
-const FilterBar = () => {
+  const sortOptions = [
+    { value: 'none', label: 'Default' },
+    { value: 'priceLowHigh', label: 'Price: Low to High' },
+    { value: 'priceHighLow', label: 'Price: High to Low' },
+    { value: 'ratingHighLow', label: 'Rating: High to Low' },
+  ]
+
+  const categoryOptions= [
+    { value: 'all', label: 'All Categories' },
+    ...categories.map((cat) => ({ value: cat.name, label: cat.name })),
+  ]
+
+  
+const selectedSort=sortOptions?.find((opt)=>opt.value===sortOption) || null;
+
+
   return (
-    <div>FilterBar</div>
+    <div className='bg-white rounded-md px-4 py-3 mb-4 flex flex-col md:flex-row gap-3 md:items-center md:justify-between'>
+      <div className='flex-1'>
+        <input 
+         type='text'
+          placeholder='Search foods...'
+          value={searchTerm}
+          onChange={(e)=>onSearchChange(e.target.value)}
+          className='w-full border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-orange-500 px-3 py-2'
+        />
+      </div>
+      <div className='w-full md:w-64'>
+        <Select 
+          options={sortOptions}
+          value={selectedSort}
+          onChange={(opt)=>onSortChange(opt.value)}
+          className='text-sm'
+        />
+      </div>
+      <div className='w-full md:w-64'>
+        <Select 
+          options={categoryOptions}
+          onChange={(opt)=>onCategoryChange(opt.value)}
+          value={selectedCategory}
+          className='text-sm'
+          placeholder='Select Category'
+        />
+      </div>
+    </div>
   )
 }
 

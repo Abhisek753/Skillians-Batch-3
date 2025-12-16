@@ -1,7 +1,7 @@
 import React from 'react'
 import { useCart } from '../context/CartContext'
 import { useNavigate } from 'react-router-dom';
-
+import { MdDelete } from "react-icons/md";
 const CartPage = () => {
  const {cartItem,updateQuantity,removeFromCart,totalAmount,totalQty}=useCart();
 const navigate=useNavigate()
@@ -16,13 +16,13 @@ const navigate=useNavigate()
       ):(
         <>
            <ul className='space-y-4'>
-            {cartItem.map((item)=>(
-              <li key={item.id} className='flex gap-4 bg-white p-3 rounded-2xl shadow-sm' >
-                <div className='flex gap-4 items-center'>
-                  <h3 className='font-medium'>{item.productId}</h3>
+            {cartItem.map((item,index)=>(
+              <li key={item.id} className='flex gap-4 justify-between bg-white p-3 pr-4 rounded-2xl shadow-sm' >
+                <div className='flex gap-4 justify-between items-center'>
+                  <h3 className='font-medium'>{index+1}</h3>
                   <p className='text-sm text-gray-500'>Price :${item.price}</p>
                   <p className='text-sm text-gray-500'>Added At{item.addedAt}</p>
-                   <div className='ml-3 flex items-center gap-3'>
+                   <div className='ml-3 flex items-center text-center gap-3'>
                     {console.log(item)}
                     <button onClick={()=>updateQuantity(item?.id,item?.quantity-1,item.price)} className='text-4xl'>-</button>
                     <button  className='text-xl'>{item.quantity}</button>
@@ -30,7 +30,9 @@ const navigate=useNavigate()
                     <span className='ml-4 text-sm'>Subtotal :{item.quantity*item.price}</span>
                     </div>
                 </div>
-                <button onClick={()=>removeFromCart(item.id)} >Remove</button>
+                <button onClick={()=>removeFromCart(item.id)} >
+                  <MdDelete />
+                </button>
                  
               </li>
             ))}
@@ -38,7 +40,7 @@ const navigate=useNavigate()
            <div className='mt-6 p-4 justify-between flex'>
            <div>
              <p className='text-xl'>Item: {totalQty}</p>
-            <p className='text-xl'>Total: {totalAmount}</p>
+             <p className='text-xl'>Total: {totalAmount.toFixed(2)}</p>
            </div>
            <div className='flex gap-3 '>
             <button className='bg-red-500 py-2 h-fit px-4 text-white '>Clear</button>
