@@ -16,6 +16,7 @@ const counterSlice=createSlice({
         reset:(state)=>{
             state.value=0
         }
+        
 
         //can create more action like multiply,dividion.....
     }
