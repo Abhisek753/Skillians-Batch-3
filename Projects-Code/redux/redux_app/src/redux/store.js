@@ -5,6 +5,8 @@ import  counterReducer from "./counterSlice"
 export const store = configureStore({ 
     reducer:{
         counter:counterReducer,
+        // students:studentReducer,
+        
     }
  })
 // The store now has redux-thunk added and the Redux DevTools Extension is turned on
